@@ -1,14 +1,13 @@
 # MiniCore Arch
+
 Flutter/Dart Architecture proposal inspired by Clean Architecture.
 
 ![Image 1](imgs/image2.png)
-
 
 ## Proposta do Clean Dart
 
 - [pt-BR](1.0/README.md)
 - [en-US](1.0/README_en.md)
-
 
 # Início
 
@@ -18,13 +17,11 @@ Usando o Flutter como exemplo teremos então três camadas mantendo a “Arquite
 
 A proposta de Arquitetura se propõe a desacoplar as camadas mais externas e preservar a Regra de Negócio.
 
-
 ## UI
 
-A Camada **UI** fica responsável por declarar as entradas, saídas e interações da aplicação. 
+A Camada **UI** fica responsável por declarar as entradas, saídas e interações da aplicação.
 
 Usando o Flutter como exemplo, hospedaremos os Widgets e Pages, já no backend como exemplo, seria nesta camada onde colocaríamos os Handlers ou Commands da nossa API.
-
 
 ## INTERACTOR
 
@@ -33,12 +30,11 @@ O núcleo da camada será a elaboração do estado e a prograpação por de algu
 
 Tomando um Repository como exemplo, teremos que ter apenas o contrato de interfaces(Abstrações) e a responsabilidade de implementação desse objeto deverá ser repassado a outra camada mais baixa.
 
-
 ## DATA
 
 Esta camada dá suporte a camada **Interactor** implementando suas interfaces. Para isso, adapta os dados externos para que possa cumprir os contratos do domínio.
 
-Muito provavelmente nessa camada iremos implementar alguma interface de um Repository ou Services que pode ou não depender de dados externos como uma API ou acesso a algum Hardware como por exemplo Bluetooth. 
+Muito provavelmente nessa camada iremos implementar alguma interface de um Repository ou Services que pode ou não depender de dados externos como uma API ou acesso a algum Hardware como por exemplo Bluetooth.
 
 Para que o Repository possa processar e adaptar os dados externos devemos criar contratos para esses serviços visando passar a responsabilidade de implementação para a camada mais baixa da nossa arquitetura.
 
@@ -49,7 +45,6 @@ Basicamente a camada **DATA** deve conter tudo aquilo que terá grandes chances 
 ## Modularize
 
 Obviamente podemos manter nossas camadas para a aplicação inteira, mas podemos ter um melhor proveito criando as camadas Interactor, Data e UI para cada feature. Exemplo:
-
 
 ```
 module
@@ -78,8 +73,7 @@ Talvez no começo da sua jornada "Limpa" algumas camadas possam parecer "sem uti
 
 Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven Development) pois a camada de **UI** será uma das últimas coisas que iremos pensar no desenvolvimento da nossa feature.
 
-
-# Assine!
+# Assine
 
 Apreciamos o seu feedback!
 Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
@@ -95,6 +89,7 @@ Sinta-se a vontade para abrir um **PR** com correções na documentação dessa 
 - Clean Dart Login with Firebase, MobX and Modular
 - [Clean Dart Github Search with BLoC and Modular](https://github.com/Flutterando/clean-dart-search-bloc)
 - [Clean Dart Github Search with MobX and Modular](https://github.com/jacobaraujo7/clean-dart-search-mobx)
+- [Simles App MiniCore](https://github.com/viniciusddrft/mini_core_exemple)
 
 # Links úteis
 
@@ -102,9 +97,12 @@ Sinta-se a vontade para abrir um **PR** com correções na documentação dessa 
 - [Sua Arquitetura está limpa?](https://medium.com/flutterando/sua-arquitetura-est%C3%A1-limpa-clean-architecture-no-flutter-458c68fad120)
 - [Os tijolos do Clean Architecture](https://www.youtube.com/watch?v=C8mpy3pwqQc)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+<<<<<<< Updated upstream
 
 # Padrões de Projeto usados.
 
 - [State](https://refactoring.guru/pt-br/design-patterns/state)
 - [Adapter](https://refactoring.guru/pt-br/design-patterns/adapter)
 
+=======
+>>>>>>> Stashed changes
