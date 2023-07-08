@@ -4,7 +4,7 @@ Flutter/Dart Architecture proposal inspired by Clean Architecture.
 ![Image 1](imgs/image2.png)
 
 
-## Proposta do MiniCore
+## Proposta do Clean Dart
 
 - [pt-BR](1.0/README.md)
 - [en-US](1.0/README_en.md)
@@ -81,10 +81,8 @@ Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven D
 
 # Assine!
 
-Ewerton Santos (ewertonls)
-
 Apreciamos o seu feedback!
-Se concorda com a proposta de Arquitetura Limpa "MiniCore", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
+Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
 
 Estamos abertos a sugestões e melhorias na documentação!
 Faça isso por meio das [issues](https://github.com/Flutterando/Clean-Dart/issues), nossa equipe ficará muito contente com seu interesse em melhorar essa ferramenta para a comunidade.
@@ -104,4 +102,9 @@ Sinta-se a vontade para abrir um **PR** com correções na documentação dessa 
 - [Sua Arquitetura está limpa?](https://medium.com/flutterando/sua-arquitetura-est%C3%A1-limpa-clean-architecture-no-flutter-458c68fad120)
 - [Os tijolos do Clean Architecture](https://www.youtube.com/watch?v=C8mpy3pwqQc)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+# Padrões de Projeto usados.
+
+- [State](https://refactoring.guru/pt-br/design-patterns/state)
+- [Adapter](https://refactoring.guru/pt-br/design-patterns/adapter)
 
