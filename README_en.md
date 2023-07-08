@@ -4,51 +4,51 @@ Flutter/Dart Architecture proposal inspired by Clean Architecture.
 ![Image 1](imgs/image2.png)
 
 
-## Proposta do Clean Dart
+## Clean Dart proposal
 
 - [pt-BR](1.0/README.md)
 - [en-US](1.0/README_en.md)
 
 
-# Início
+# Start
 
-Usando o Flutter como exemplo teremos então três camadas mantendo a “Arquitetura de Plugin”, com foco principal no Estado da Aplicação, camada esta que hospeda os eventos/ações para mudança de estado.
+Using Flutter as an example, we will then have three layers maintaining the “Plugin Architecture”, with the main focus on the State of the Application, which is the layer that hosts the events/actions for state changes.
 
 ![Image 1](imgs/image1.png)
 
-A proposta de Arquitetura se propõe a desacoplar as camadas mais externas e preservar a Regra de Negócio.
+The Architecture proposal proposes to decouple the outermost layers and preserve the Business Rule.
 
 
 ## UI
 
-A Camada **UI** fica responsável por declarar as entradas, saídas e interações da aplicação. 
+The **UI** Layer is responsible for declaring the application's inputs, outputs and interactions.
 
-Usando o Flutter como exemplo, hospedaremos os Widgets e Pages, já no backend como exemplo, seria nesta camada onde colocaríamos os Handlers ou Commands da nossa API.
+Using Flutter as an example, we will host the Widgets and Pages, in the backend as an example, it would be in this layer where we would place the Handlers or Commands of our API.
 
 
 ## INTERACTOR
 
-A camada de **Interactor** hospedará as Regras de Negócio da aplicação junto aos seus estados.
-O núcleo da camada será a elaboração do estado e a prograpação por de alguma abordagem de gerenciamento de estado.
+The **Interactor** layer will host the application's Business Rules along with their states.
+The core of the layer will be state elaboration and scheduling through some state management approach.
 
-Tomando um Repository como exemplo, teremos que ter apenas o contrato de interfaces(Abstrações) e a responsabilidade de implementação desse objeto deverá ser repassado a outra camada mais baixa.
+Taking a Repository as an example, we will only have to have the interfaces contract (Abstractions) and the responsibility for implementing this object will have to be transferred to another lower layer.
 
 
 ## DATA
 
-Esta camada dá suporte a camada **Interactor** implementando suas interfaces. Para isso, adapta os dados externos para que possa cumprir os contratos do domínio.
+This layer supports the **Interactor** layer by implementing its interfaces. To do this, it adapts external data so that it can fulfill the domain's contracts.
 
-Muito provavelmente nessa camada iremos implementar alguma interface de um Repository ou Services que pode ou não depender de dados externos como uma API ou acesso a algum Hardware como por exemplo Bluetooth. 
+Most likely in this layer we will implement some Repository or Services interface that may or may not depend on external data such as an API or access to some Hardware such as Bluetooth.
 
-Para que o Repository possa processar e adaptar os dados externos devemos criar contratos para esses serviços visando passar a responsabilidade de implementação para a camada mais baixa da nossa arquitetura.
+In order for the Repository to be able to process and adapt external data, we must create contracts for these services in order to pass the implementation responsibility to the lowest layer of our architecture.
 
-Basicamente a camada **DATA** deve conter tudo aquilo que terá grandes chances de ser alterado sem que o programador possa intervir diretamente no projeto.
+Basically, the **DATA** layer should contain everything that will have a high chance of being changed without the programmer being able to intervene directly in the project.
 
-# Dicas
+# Tips
 
 ## Modularize
 
-Obviamente podemos manter nossas camadas para a aplicação inteira mas podemos ter um melhor proveito criando as camadas Interactor, Data e UI para cada feature. Exemplo:
+Obviously we can keep our layers for the entire application but we can get more out of it by creating Interactor, Data and UI layers for each feature. Example:
 
 
 ```
@@ -66,11 +66,11 @@ module
     └── widgets
 ```
 
-## Pense por camada
+## Think by layer
 
-Quando for desenvolver comece a pensar por camada, não devemos nos preocupar com o que tem na camada de **UI** ou **DATA** no começo da funcionalidade. Se pensarmos nas camadas mais externas podemos acabar nos orientando (erroneamente) por essas camadas. Assim, devemos nos acostumar a desenvolver camada por camada, de dentro para fora e não ao contrário.
+When developing, start thinking by layer, we shouldn't worry about what's in the **UI** or **DATA** layer at the beginning of the functionality. If we think about the outermost layers, we can end up orienting ourselves (mistakenly) by these layers. Thus, we must get used to developing layer by layer, from the inside out and not the other way around.
 
-Talvez no começo da sua jornada "Limpa" algumas camadas possam parecer "sem utilidade", isso acontece quando nossa mente ainda não está **Pensando em Camadas** (ou porque sua Regra de Negócio é simples demais para isso).
+Perhaps at the beginning of your "Clean" journey some layers may seem "useless", this happens when our mind is not yet **Thinking in Layers** (or because your Business Rule is too simple for that).
 
 ## Teste de Unidade será sua nova UI
 
