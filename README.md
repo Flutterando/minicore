@@ -90,6 +90,7 @@ Sinta-se a vontade para abrir um **PR** com correções na documentação dessa 
 - [Clean Dart Github Search with BLoC and Modular](https://github.com/Flutterando/clean-dart-search-bloc)
 - [Clean Dart Github Search with MobX and Modular](https://github.com/jacobaraujo7/clean-dart-search-mobx)
 - [Simles App MiniCore](https://github.com/viniciusddrft/mini_core_exemple)
+- [Todo App with MiniCore](https://github.com/EdsonMello-code/todoapp)
 
 # Links úteis
 
@@ -97,12 +98,9 @@ Sinta-se a vontade para abrir um **PR** com correções na documentação dessa 
 - [Sua Arquitetura está limpa?](https://medium.com/flutterando/sua-arquitetura-est%C3%A1-limpa-clean-architecture-no-flutter-458c68fad120)
 - [Os tijolos do Clean Architecture](https://www.youtube.com/watch?v=C8mpy3pwqQc)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-<<<<<<< Updated upstream
 
 # Padrões de Projeto usados.
 
 - [State](https://refactoring.guru/pt-br/design-patterns/state)
 - [Adapter](https://refactoring.guru/pt-br/design-patterns/adapter)
 
-=======
->>>>>>> Stashed changes
