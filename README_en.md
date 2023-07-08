@@ -1,14 +1,13 @@
 # MiniCore Arch
+
 Flutter/Dart Architecture proposal inspired by Clean Architecture.
 
 ![Image 1](imgs/image2.png)
-
 
 ## Clean Dart proposal
 
 - [pt-BR](1.0/README.md)
 - [en-US](1.0/README_en.md)
-
 
 # Start
 
@@ -18,13 +17,11 @@ Using Flutter as an example, we will then have three layers maintaining the “P
 
 The Architecture proposal proposes to decouple the outermost layers and preserve the Business Rule.
 
-
 ## UI
 
 The **UI** Layer is responsible for declaring the application's inputs, outputs and interactions.
 
 Using Flutter as an example, we will host the Widgets and Pages, in the backend as an example, it would be in this layer where we would place the Handlers or Commands of our API.
-
 
 ## INTERACTOR
 
@@ -32,7 +29,6 @@ The **Interactor** layer will host the application's Business Rules along with t
 The core of the layer will be state elaboration and scheduling through some state management approach.
 
 Taking a Repository as an example, we will only have to have the interfaces contract (Abstractions) and the responsibility for implementing this object will have to be transferred to another lower layer.
-
 
 ## DATA
 
@@ -49,7 +45,6 @@ Basically, the **DATA** layer should contain everything that will have a high ch
 ## Modularize
 
 Obviously we can keep our layers for the entire application but we can get more out of it by creating Interactor, Data and UI layers for each feature. Example:
-
 
 ```
 module
@@ -72,34 +67,33 @@ When developing, start thinking by layer, we shouldn't worry about what's in the
 
 Perhaps at the beginning of your "Clean" journey some layers may seem "useless", this happens when our mind is not yet **Thinking in Layers** (or because your Business Rule is too simple for that).
 
-## Teste de Unidade será sua nova UI
+## Unit Testing will be your new UI
 
-É muito comum os desenvolvedores criarem primeiro as suas Views para que então possam "testar" as Regras de Negócio. Mas nós já temos uma ferramenta própria para isso e um lugar dedicado para armazenar esses testes.
+It is very common for developers to first create their Views so that they can then "test" the Business Rules. But we already have a proper tool for this and a dedicated place to store these tests.
 
-Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven Development) pois a camada de **UI** será uma das últimas coisas que iremos pensar no desenvolvimento da nossa feature.
+Developing in a "clean" way is in total synergy with TDD (Test Driven Development) as the UI layer will be one of the last things we will think about in the development of our feature.
 
+# Sign
 
-# Assine!
+We appreciate your feedback!
 
-Apreciamos o seu feedback!
-Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
+If you agree with the Clean Dart "Clean Architecture" proposal, leave a Star on this repository. A Star is the same as signing a "clean manifesto" agreeing with this proposal.
 
-Estamos abertos a sugestões e melhorias na documentação!
-Faça isso por meio das [issues](https://github.com/Flutterando/Clean-Dart/issues), nossa equipe ficará muito contente com seu interesse em melhorar essa ferramenta para a comunidade.
+We are open to suggestions and improvements in documentation!
+Do this through the issues, our team will be very pleased with your interest in improving this tool for the community.
 
-Sinta-se a vontade para abrir um **PR** com correções na documentação dessa proposta.
+Feel free to open a PR with corrections to the documentation of this proposal.
 
-# Exemplos
+# Examples
 
 - [Clean Dart Burgers Cart using BLoC, Cubit, Triple, Asp, MobX, etc](https://github.com/jacobaraujo7/bloc_atom)
 - Clean Dart Login with Firebase, MobX and Modular
 - [Clean Dart Github Search with BLoC and Modular](https://github.com/Flutterando/clean-dart-search-bloc)
 - [Clean Dart Github Search with MobX and Modular](https://github.com/jacobaraujo7/clean-dart-search-mobx)
 
-# Links úteis
+# Useful Links
 
-- [Resumo do livro "Arquitetura Limpa"](https://medium.com/@deividchari/desvendando-a-arquitetura-limpa-de-uncle-bob-3e60d9aa9cce)
-- [Sua Arquitetura está limpa?](https://medium.com/flutterando/sua-arquitetura-est%C3%A1-limpa-clean-architecture-no-flutter-458c68fad120)
-- [Os tijolos do Clean Architecture](https://www.youtube.com/watch?v=C8mpy3pwqQc)
+- [Resume of "Clean Architecture" book](https://medium.com/@deividchari/desvendando-a-arquitetura-limpa-de-uncle-bob-3e60d9aa9cce)
+- [Is your architecture clean?](https://medium.com/flutterando/sua-arquitetura-est%C3%A1-limpa-clean-architecture-no-flutter-458c68fad120)
+- [Bricks of Clean Architecture](https://www.youtube.com/watch?v=C8mpy3pwqQc)
 - [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
-
