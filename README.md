@@ -48,7 +48,7 @@ Basicamente a camada **DATA** deve conter tudo aquilo que terá grandes chances 
 
 ## Modularize
 
-Obviamente podemos manter nossas camadas para a aplicação inteira mas podemos ter um melhor proveito criando as camadas Interactor, Data e UI para cada feature. Exemplo:
+Obviamente podemos manter nossas camadas para a aplicação inteira, mas podemos ter um melhor proveito criando as camadas Interactor, Data e UI para cada feature. Exemplo:
 
 
 ```
