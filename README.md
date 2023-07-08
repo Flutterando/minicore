@@ -4,7 +4,7 @@ Flutter/Dart Architecture proposal inspired by Clean Architecture.
 ![Image 1](imgs/image2.png)
 
 
-## Proposta do Clean Dart
+## Proposta do MiniCore
 
 - [pt-BR](1.0/README.md)
 - [en-US](1.0/README_en.md)
@@ -84,7 +84,7 @@ Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven D
 Ewerton Santos (ewertonls)
 
 Apreciamos o seu feedback!
-Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
+Se concorda com a proposta de Arquitetura Limpa "MiniCore", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
 
 Estamos abertos a sugestões e melhorias na documentação!
 Faça isso por meio das [issues](https://github.com/Flutterando/Clean-Dart/issues), nossa equipe ficará muito contente com seu interesse em melhorar essa ferramenta para a comunidade.
