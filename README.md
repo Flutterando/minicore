@@ -81,6 +81,8 @@ Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven D
 
 # Assine!
 
+Ewerton Santos (ewertonls)
+
 Apreciamos o seu feedback!
 Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
 
