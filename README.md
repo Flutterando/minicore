@@ -12,8 +12,6 @@ Flutter/Dart Architecture proposal inspired by Clean Architecture.
 
 # Início
 
-
-
 Usando o Flutter como exemplo teremos então três camadas mantendo a “Arquitetura de Plugin”, com foco principal no Estado da Aplicação, camada esta que hospeda os eventos/ações para mudança de estado.
 
 ![Image 1](imgs/image1.png)
@@ -52,21 +50,21 @@ Basicamente a camada **DATA** deve conter tudo aquilo que terá grandes chances 
 
 Obviamente podemos manter nossas camadas para a aplicação inteira mas podemos ter um melhor proveito criando as camadas Interactor, Data e UI para cada feature. Exemplo:
 
-.
-└── src/
-    └── features/
-        ├── auth/
-        │   ├── data
-        │   ├── interactor
-        │   └── ui
-        ├── product/
-        │   ├── data
-        │   ├── interactor
-        │   └── ui
-        └── client/
-            ├── data
-            ├── interactor
-            └── ui
+
+```
+module
+├── data
+│   ├── datasources
+│   └── repositories
+├── domain
+│   ├── entities
+│   └── usecases
+└── presenter
+    ├── stores
+    ├── controllers
+    ├── pages
+    └── widgets
+```
 
 ## Pense por camada
 
