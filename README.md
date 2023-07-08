@@ -1,4 +1,4 @@
-# MiniCore
+# MiniCore Arch
 Flutter/Dart Architecture proposal inspired by Clean Architecture.
 
 ![Image 1](imgs/image2.png)
