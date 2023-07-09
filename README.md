@@ -76,7 +76,7 @@ Desenvolver de forma "limpa" está em total sinergia com o **TDD**(Test Driven D
 # Assine
 
 Apreciamos o seu feedback!
-Se concorda com a proposta de Arquitetura Limpa "Clean Dart", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
+Se concorda com a proposta de Arquitetura nomeada de "MiniCore", deixe uma **Star** neste repositório. Uma **Star** é o mesmo que assinar um "manifesto limpo" concordando com essa proposta.
 
 Estamos abertos a sugestões e melhorias na documentação!
 Faça isso por meio das [issues](https://github.com/Flutterando/Clean-Dart/issues), nossa equipe ficará muito contente com seu interesse em melhorar essa ferramenta para a comunidade.
